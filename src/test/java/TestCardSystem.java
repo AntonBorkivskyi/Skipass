@@ -30,6 +30,14 @@ public class TestCardSystem {
         ts.pass_skipass(s1);
         ts.pass_skipass(s2);
         ts.pass_skipass(s3);
+        
+        s2.riding();
+        s3.riding();
+
+        s2.setBlocked(true);
+        s3.setBlocked(true);
+
+        assertEquals(true, s2.isBlocked());
     }
 
     @Test
